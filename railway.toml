@@ -1,0 +1,8 @@
+[build]
+builder = "nixpacks"
+
+[build.nixpacksPlan.phases.setup]
+nixPkgs = ["nodejs_20", "pnpm"]
+
+[deploy]
+startCommand = "node --enable-source-maps ./dist/index.mjs"
