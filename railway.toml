@@ -1,0 +1,6 @@
+[build]
+installCommand = "echo 'Skipping install — node_modules committed'"
+buildCommand = "echo 'Skipping build — dist committed'"
+
+[deploy]
+startCommand = "node --enable-source-maps ./dist/index.mjs"
