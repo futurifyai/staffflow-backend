@@ -2,6 +2,7 @@
   "name": "@workspace/api-server",
   "version": "0.0.0",
   "private": true,
+  "packageManager": "pnpm@10.33.2",
   "type": "module",
   "scripts": {
     "dev": "cross-env NODE_ENV=development pnpm run build && pnpm run start",

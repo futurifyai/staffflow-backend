@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["nodejs_20"]
+
+[phases.install]
+cmds = ["npm install -g pnpm && pnpm install --ignore-scripts"]
+
+[phases.build]
+cmds = ["pnpm run build"]
+
+[start]
+cmd = "node --enable-source-maps ./dist/index.mjs"
